@@ -1,0 +1,18 @@
+// The Helper
+.color-helper(@name, @color) {
+	.@{name}-color {
+		color: @color !important;
+	}
+
+	.@{name}-background {
+		background-color: @color !important;
+	}
+}
+
+// Sample Usage:
+.color-helper(white, white);
+
+.color-helper(black, #000);
+
+@myColor: #123456;
+.color-helper(my-color, @myColor);
